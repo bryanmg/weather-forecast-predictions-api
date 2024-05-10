@@ -4,26 +4,22 @@ source 'https://rubygems.org'
 
 ruby '3.1.0'
 
+gem 'activeresource'
+gem 'bootsnap', require: false
+gem 'byebug'
+gem 'httparty'
+gem 'importmap-rails'
+gem 'jbuilder'
+gem 'puma', '>= 5.0'
 gem 'rails', '~> 7.1.0'
 gem 'sprockets-rails'
-gem 'sqlite3', '~> 1.4'
-gem 'puma', '>= 5.0'
-gem 'importmap-rails'
-gem 'turbo-rails'
+gem 'sqlite3'
 gem 'stimulus-rails'
-gem 'jbuilder'
-gem 'redis', '>= 4.0.1'
-gem 'tzinfo-data', platforms: %i[mswin mswin64 mingw x64_mingw jruby]
-gem 'bootsnap', require: false
-
-group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'debug', platforms: %i[mri mswin mswin64 mingw x64_mingw]
-end
+gem 'turbo-rails'
 
 group :development do
-  gem 'web-console'
   gem 'error_highlight', '>= 0.4.0', platforms: [:ruby]
+  gem 'web-console'
 end
 
 group :test do
