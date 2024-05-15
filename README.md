@@ -24,7 +24,10 @@
 
 * You can check if everything is working fine by running the test suite: ```rails test```
 
-## NOTES for the reviewer
+
+## NOTES for the reviewer (UPDATE)
+* Update: Deprecated instructions the first shared in the PDF file Api key works again.
+
 * I added a ```FakeDataOpenWeather.dummy_data``` module (I left some important notes there too) due to an invalid API Key error when fetching information from the https://openweathermap.org/ API. The error message is:
 ``` JSON 
 {
