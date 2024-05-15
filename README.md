@@ -1,21 +1,28 @@
 # README
 
 ## Prerequisites
-Ruby v3.1
-Rails 7.1
+* Ruby v3.1
+* Rails 7.1
 
 
 ## FOR THE REVIEW PROCESS [How to use locally]
-> Clone this repository
-> Run ```bundle install```
-> Run the server locally: ```rails server```
-> Call the endpoint ```[GET] '/api/v1/weather_forecasts'``` with your preferred client. The cURL command should look as follows (the 'city_name' parameter is required):
+* Clone this repository.
+
+* Run ```bundle install```
+
+* Run the server locally: ```rails server```.
+
+* Do Not Forget set sur API KEY variable (run in your terminal ```export OPEN_WEATHER_FORECAST_API_KEY="a5a-xxxxxx-b581"```).
+
+* Call the endpoint ```[GET] '/api/v1/weather_forecasts'``` with your preferred client. The cURL command should look as follows (the 'city_name' parameter is required):
     ``` curl --location http://127.0.0.1:3000/api/v1/weather_forecasts?city_name=monterr ```
 
 ## Testing
-> Clone this repository
-> Run ```bundle install```
-> You can check if everything is working fine by running the test suite: ```rails test```
+* Clone this repository
+
+* Run ```bundle install```
+
+* You can check if everything is working fine by running the test suite: ```rails test```
 
 ## NOTES for the reviewer
 * I added a ```FakeDataOpenWeather.dummy_data``` module (I left some important notes there too) due to an invalid API Key error when fetching information from the https://openweathermap.org/ API. The error message is:
@@ -36,11 +43,12 @@ So, the forecast data will always be the same for all cities you follow.
 * I hope this issue with the API Key doesn't impact the final evaluation.
 
 * All the API keys I tried were:
-    Yours: 
-    a5a47c18197737e8eeca634cd6acb581
-    fce130528c880e622fefde5bad9587e5
-    0f0d1c45d10a085ac3be5dc6b4081476
-    e1a53fec9c02a9055aa46a1ddb8bb525
+    > Yours: <br/>
+    a5a-xxxxxx-acb581 <br/>
+    fce13-xxxxxx-d9587e5 <br/>
+    0f0d1c-xxxxx-4081476 <br/>
+    Mine: <br/>
+    e1a53fe-xxxxxxx-b8bb525 <br/>
 
 ## Contact info
 If you have any doubts, please contact me at iam.el.bryan1@gmail.com
