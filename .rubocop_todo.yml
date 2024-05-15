@@ -30,14 +30,10 @@ Metrics/PerceivedComplexity:
 # Offense count: 6
 # Configuration parameters: AllowedConstants.
 Style/Documentation:
+  Enabled: false
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
-    - 'app/controllers/weather_forecast_controller.rb'
-    - 'app/helpers/application_helper.rb'
-    - 'app/helpers/weather_forecast_helper.rb'
-    - 'app/mailers/application_mailer.rb'
-    - 'app/models/application_record.rb'
     - 'config/application.rb'
 
 # Offense count: 1
